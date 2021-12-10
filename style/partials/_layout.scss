@@ -1,6 +1,48 @@
-.container {
-  width: 75vw;
-  height: 75vh;
-  display: grid;
-  place-content: center;
+//CONTAINERS
+.container-verde-100 {
+  width: 100%;
+  height: max-content;
+  padding: 10rem 0;
+  background-color: $primary-3;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $tertiary-4;
+  }
+
+  p {
+    color: $secondary-1;
+  }
+
+  .overline {
+    color: $secondary-2;
+  }
+}
+
+.container-laranja-100 {
+  width: 100%;
+  height: max-content;
+  padding: 10rem 0;
+  background-color: $tertiary-1;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $primary-3;
+  }
+
+  p {
+    color: $black-2;
+  }
+
+  .overline {
+    color: $secondary-2;
+  }
+}
+
+.container-1440 {
+  width: 1440px;
 }

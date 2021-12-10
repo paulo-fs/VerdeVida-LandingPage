@@ -3,7 +3,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
 
 .btn-prim {
   min-width: 200px;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-radius: 2px;
   border: none;
   box-shadow: $box-shadow;
@@ -29,7 +29,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
 
 .btn-sec {
   min-width: 200px;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-radius: 2px;
   border: none;
   box-shadow: $box-shadow;
@@ -55,7 +55,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
 
 .btn-ter {
   min-width: 200px;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-radius: 2px;
   border: 1px solid $primary-3;
   background-color: none;
@@ -81,7 +81,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
 
 .btn-ter-2 {
   min-width: 200px;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-radius: 2px;
   border: 1px solid $secondary-1;
   background-color: none;
@@ -105,13 +105,58 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
   }
 }
 
+.btn-round {
+  background-color: rgba($secondary-1, 0.7);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center;
+
+  img {
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: grid;
+    place-self: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba($secondary-3, 0.7);
+
+    transition: 0.3s ease;
+  }
+
+  transition: 0.3s ease;
+  &:hover {
+    background-color: rgba($secondary-1, 1);
+
+    &::before {
+      background-color: rgba($secondary-3, 0.4);
+    }
+  }
+
+  &:focus {
+    background-color: $tertiary-3;
+
+    &::before {
+      background-color: $tertiary-3;
+    }
+  }
+}
+
+//LINKS
 .link {
   color: $secondary-2;
-  padding: 1rem 2rem 1rem 0;
+  padding: 1rem 2rem 0.3rem 0;
 
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
 
   position: relative;
@@ -125,7 +170,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     left: 0;
 
     width: 1rem;
-    height: 4px;
+    height: 2x;
     background-color: $secondary-2;
 
     transition: 0.7s ease;
@@ -136,7 +181,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     color: $secondary-1;
 
     &::before {
-      width: 5rem;
+      width: 3rem;
       background-color: $secondary-1;
     }
   }
@@ -145,7 +190,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     color: $tertiary-4;
 
     &::before {
-      width: 5rem;
+      width: 3rem;
       background-color: $tertiary-4;
     }
   }
@@ -153,11 +198,11 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
 
 .link-light {
   color: $secondary-1;
-  padding: 1rem 2rem 1rem 0;
+  padding: 1rem 2rem 0.3rem 0;
 
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
 
   position: relative;
@@ -171,7 +216,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     left: 0;
 
     width: 1rem;
-    height: 4px;
+    height: 2px;
     background-color: $secondary-1;
 
     transition: 0.7s ease;
@@ -182,7 +227,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     color: $tertiary-3;
 
     &::before {
-      width: 5rem;
+      width: 3rem;
       background-color: $tertiary-3;
     }
   }
@@ -191,7 +236,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
     color: $tertiary-2;
 
     &::before {
-      width: 5rem;
+      width: 3rem;
       background-color: $tertiary-2;
     }
   }
