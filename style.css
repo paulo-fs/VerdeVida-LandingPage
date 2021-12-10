@@ -8,18 +8,206 @@
   font-family: "Be Vietnam", sans-serif;
 }
 
-.btn-primary {
+.container {
+  width: 75vw;
+  height: 75vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.btn-prim {
   min-width: 200px;
-  padding: 6px 32px;
+  padding: 1rem 3rem;
   border-radius: 2px;
+  border: none;
   -webkit-box-shadow: 0px 3px 5px rgba(103, 123, 101, 0.4);
           box-shadow: 0px 3px 5px rgba(103, 123, 101, 0.4);
   background-color: #3a493d;
+  color: #f5faf6;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-prim:hover {
+  background-color: #677b65;
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+          box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+  color: #f2dcbf;
+}
+
+.btn-prim:focus {
+  background-color: #709d66;
+}
+
+.btn-sec {
+  min-width: 200px;
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 5px rgba(103, 123, 101, 0.4);
+          box-shadow: 0px 3px 5px rgba(103, 123, 101, 0.4);
+  background-color: #709d66;
+  color: #f5faf6;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-sec:hover {
+  background-color: #80a674;
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+          box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+  color: #f2dcbf;
+}
+
+.btn-sec:focus {
+  background-color: rgba(128, 166, 116, 0.75);
+}
+
+.btn-ter {
+  min-width: 200px;
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  border: 1px solid #3a493d;
+  background-color: none;
+  color: #3a493d;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-ter:hover {
+  background-color: rgba(128, 166, 116, 0.4);
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+          box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
   color: #677b65;
 }
 
-.btn-primary:hover {
-  background-color: #445546;
+.btn-ter:focus {
+  background-color: rgba(128, 166, 116, 0.75);
+  color: #f5faf6;
+}
+
+.btn-ter-2 {
+  min-width: 200px;
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  border: 1px solid #becfb4;
+  background-color: none;
+  color: #becfb4;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-ter-2:hover {
+  background-color: rgba(128, 166, 116, 0.75);
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+          box-shadow: 0px 5px 11px 1px rgba(68, 85, 70, 0.2);
+  color: #f5faf6;
+}
+
+.btn-ter-2:focus {
+  background-color: #80a674;
+  color: #f5faf6;
+}
+
+.link {
+  color: #80a674;
+  padding: 1rem 2rem 1rem 0;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1rem;
+  height: 4px;
+  background-color: #80a674;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.link:hover {
+  color: #becfb4;
+}
+
+.link:hover::before {
+  width: 5rem;
+  background-color: #becfb4;
+}
+
+.link:focus {
+  color: #eba761;
+}
+
+.link:focus::before {
+  width: 5rem;
+  background-color: #eba761;
+}
+
+.link-light {
+  color: #becfb4;
+  padding: 1rem 2rem 1rem 0;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.link-light::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1rem;
+  height: 4px;
+  background-color: #becfb4;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.link-light:hover {
+  color: #eebc86;
+}
+
+.link-light:hover::before {
+  width: 5rem;
+  background-color: #eebc86;
+}
+
+.link-light:focus {
+  color: #f2dcbf;
+}
+
+.link-light:focus::before {
+  width: 5rem;
+  background-color: #f2dcbf;
 }
 
 .head-1 {
