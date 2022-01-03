@@ -7,12 +7,8 @@
   font-family: "Be Vietnam", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+html{
+  overflow-x: hidden;
 }
 
 @import "style/partials/color";
@@ -21,32 +17,10 @@ ul {
 @import "style/partials/buttons";
 @import "style/partials/type";
 
-//MENU DESTKTOP
-#menu-desktop {
-  width: 100%;
-  height: 72px;
-  padding: 1rem 4rem;
-  background-color: $primary-3;
-  box-shadow: $box-shadow;
-  z-index: 2;
+a {
+  text-decoration: none;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .logo {
-    img {
-      height: 40px;
-    }
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    .menu-items {
-      display: flex;
-    }
-  }
+ul {
+  list-style: none;
 }
