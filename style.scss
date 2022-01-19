@@ -29,6 +29,11 @@ ul {
 
 
 #hero{
+
+  .hero{
+    margin: 0 auto;
+  }
+
   .container-60{
     margin: 0 auto;
 
@@ -59,11 +64,10 @@ ul {
 
 #fornecedores{
 
-  .container-1440{
-    // display: block;
+  .container{
     flex-direction: column;
 
-    .container{
+    .container-100{
       text-align: left;
 
       h2{
@@ -99,7 +103,7 @@ ul {
   align-items: center;
 
   .container-30{
-    // margin: 0 auto;
+    margin: 0 auto;
 
     .imagem{
       background-color: $tertiary-1;
@@ -109,7 +113,7 @@ ul {
     }
   }
 
-  .container-60{
+  .container-70{
 
     p{
       margin-bottom: 1rem;
@@ -124,7 +128,53 @@ ul {
         margin-bottom: 1rem;
       }
     }
+
+    .botao-descer{
+      margin-top: 3rem;
+      position: relative;
+      a{
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 
+
+}
+
+#quemSomos{
+
+  .container{
+    gap: 2rem;
+  }
+
+  .container-50{
+    margin: 0 auto;
+  }
+
+  .container-textos{
+    p{
+      margin-bottom: 1rem;
+    }
+    ul{
+      li{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .botao-descer{
+      margin-top: 3rem;
+    }
+  }
+  
+  .container-50 .imagem{
+    background-color: $secondary-1;
+    width: 380px;
+    height: 580px;
+    border-radius: 8px;
+  }
 
 }
