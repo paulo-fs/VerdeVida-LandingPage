@@ -1,0 +1,68 @@
+#depoimentos{
+  
+  display: none;
+
+  .container{
+
+    .container70{
+      width: 100%;
+      height: 500px;
+
+      .depoimentos{
+        position: absolute;
+        div{
+          width: 300px;
+          height: 300px;
+          background-color: white;
+        }
+  
+        .depo1{
+          opacity: .7;
+          position: relative;
+          left: 200px;
+          top: -50px;
+
+          display: flex;
+          flex-direction: column;
+          z-index: 1;
+        }
+  
+        .depo2{
+          opacity: .6;
+          position: relative;
+          top: -150px;
+          left: 280px;
+        }
+  
+        .depo3{
+          opacity: .5;
+          position: relative;
+          top: -330px;
+          left: 0px;
+        }
+
+        .depo4{
+          opacity: .4;
+          position: relative;
+          top: -550px;
+          left: 250px;
+        }
+
+        .depo5{
+          opacity: .3;
+          position: relative;
+          top: -1130px;
+          left: -80px;
+        }
+      }
+    }
+  }
+
+  .container30{
+    display: flex;
+    flex-direction: column;
+    p{
+      margin-bottom: 2rem;
+    }
+  }
+}

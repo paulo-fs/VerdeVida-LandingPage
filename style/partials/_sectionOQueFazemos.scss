@@ -1,0 +1,41 @@
+#oQueFazemos{
+
+  align-items: center;
+
+  .container-50{
+    margin: 0 auto;
+
+    .imagem{
+      background-color: $tertiary-1;
+      width: 380px;
+      height: 580px;
+      border-radius: 8px;
+    }
+  }
+
+  .container-50{
+
+    p{
+      margin-bottom: 1rem;
+    }
+    
+    ul{
+      li{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+  
+        margin-bottom: 1rem;
+      }
+    }
+
+    .botao-descer{
+      margin-top: 3rem;
+      position: relative;
+      a{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

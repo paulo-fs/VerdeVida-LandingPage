@@ -1,0 +1,45 @@
+#quemSomos{
+
+  .container{
+    gap: 2rem;
+  }
+
+  .container-50{
+    margin: 0 auto;
+  }
+
+  .container-textos{
+    p{
+      margin-bottom: 1rem;
+    }
+    ul{
+      li{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .check{
+          background-color: $secondary-1;
+          padding: 1rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .botao-descer{
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  
+  .container-50 .imagem{
+    background-color: $secondary-1;
+    width: 380px;
+    height: 580px;
+    border-radius: 8px;
+  }
+
+}

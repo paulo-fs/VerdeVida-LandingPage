@@ -1,0 +1,34 @@
+#hero{
+
+  .hero{
+    margin: 0 auto;
+    align-items: center;
+  }
+
+
+  .container-50{
+    margin: 0 auto;
+
+    .folhas{
+      position: absolute;
+
+      img{
+        position: relative;
+        right: 3rem;
+      }
+    }
+
+    img{
+      max-height: 540px;
+    }
+  }
+
+  p{
+    margin-bottom: 1.5rem;
+  }
+
+  div.body-1{
+    margin-bottom: 6rem;
+  }
+  
+}

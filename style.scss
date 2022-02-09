@@ -12,12 +12,6 @@ html{
   scroll-behavior: smooth;
 }
 
-@import "style/partials/color";
-@import "style/partials/layout";
-@import "style/partials/menu";
-@import "style/partials/buttons";
-@import "style/partials/type";
-
 a {
   text-decoration: none;
 }
@@ -27,223 +21,17 @@ ul {
 }
 
 
+@import "style/partials/color";
+@import "style/partials/layout";
+@import "style/partials/menu";
+@import "style/partials/buttons";
+@import "style/partials/type";
 
-#hero{
-
-  .hero{
-    margin: 0 auto;
-    align-items: center;
-  }
-
-
-  .container-50{
-    margin: 0 auto;
-
-    .folhas{
-      position: absolute;
-
-      img{
-        position: relative;
-        right: 3rem;
-      }
-    }
-
-    img{
-      max-height: 540px;
-    }
-  }
-
-  p{
-    margin-bottom: 1.5rem;
-  }
-
-  div.body-1{
-    margin-bottom: 6rem;
-  }
-  
-}
-
-
-#fornecedores{
-
-  .container{
-    flex-direction: column;
-
-    .container-100{
-      text-align: left;
-
-      h2{
-        margin-bottom: 2rem;
-      }
-    }
-  }
-  
-  .fornecedores{
-    ul{
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-
-      margin: 0 auto;
-      width: 100%;
-
-      li{
-        display: flex;
-        place-content: center;
-
-        img{
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-
-#oQueFazemos{
-
-  align-items: center;
-
-  .container-50{
-    margin: 0 auto;
-
-    .imagem{
-      background-color: $tertiary-1;
-      width: 380px;
-      height: 580px;
-      border-radius: 8px;
-    }
-  }
-
-  .container-50{
-
-    p{
-      margin-bottom: 1rem;
-    }
-    
-    ul{
-      li{
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-  
-        margin-bottom: 1rem;
-      }
-    }
-
-    .botao-descer{
-      margin-top: 3rem;
-      position: relative;
-      a{
-        position: absolute;
-        right: 0;
-      }
-    }
-  }
-
-
-}
-
-#quemSomos{
-
-  .container{
-    gap: 2rem;
-  }
-
-  .container-50{
-    margin: 0 auto;
-  }
-
-  .container-textos{
-    p{
-      margin-bottom: 1rem;
-    }
-    ul{
-      li{
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        margin-bottom: 1rem;
-
-        .check{
-          background-color: $secondary-1;
-          padding: 1rem;
-          border-radius: 50%;
-        }
-      }
-    }
-
-    .botao-descer{
-      margin-top: 3rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-  }
-  
-  .container-50 .imagem{
-    background-color: $secondary-1;
-    width: 380px;
-    height: 580px;
-    border-radius: 8px;
-  }
-
-}
-
-
-#pedirWhatsapp{
-  .container{
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-    
-    .body-1{
-      margin-bottom: 4rem;
-      p{
-        padding: 0.5rem 0;
-      }
-    }
-
-    .botoes{
-      display: flex;
-      gap: 2rem;
-    }
-  }
-
-}
-
-#comoChegar{
-
-  .container{
-    margin: o auto;
-    gap: 4rem;
-
-
-
-    .container30{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-
-      .matriz, .filial{
-        margin-bottom: 1rem;
-
-        .botao{
-          margin: 2rem 0 2rem 0;
-        }
-      }
-    }
-    
-    .container70{
-      display: flex;
-  
-      .frame{
-        width: 600px;
-        height: 600px;
-        border-radius: 4px;
-        border: none;
-      }
-    }
-  }
-
-}
+@import "style/partials/sectionHero";
+@import "style/partials/sectionFornecedores";
+@import "style/partials/sectionOQueFazemos";
+@import "style/partials/sectionQuemSomos";
+@import "style/partials/sectionPedir";
+@import "style/partials/sectionComoChegar";
+@import "style/partials/sectionDepoimentos";
+@import "style/partials/sectionFooter";

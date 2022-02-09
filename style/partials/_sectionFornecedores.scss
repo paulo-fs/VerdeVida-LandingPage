@@ -1,0 +1,34 @@
+#fornecedores{
+
+  .container{
+    flex-direction: column;
+
+    .container-100{
+      text-align: left;
+
+      h2{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  
+  .fornecedores{
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      margin: 0 auto;
+      width: 100%;
+
+      li{
+        display: flex;
+        place-content: center;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
