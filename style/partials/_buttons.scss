@@ -64,6 +64,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
   font-weight: 500;
   line-height: 22px;
   font-size: 1rem;
+  text-align: center;
   text-transform: uppercase;
 
   transition: 0.3s ease;
@@ -90,6 +91,7 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
   font-weight: 500;
   line-height: 22px;
   font-size: 1rem;
+  text-align: center;
   text-transform: uppercase;
 
   transition: 0.3s ease;
@@ -206,6 +208,23 @@ $box-shadow-hover: 0px 5px 11px 1px rgba($primary-2, 0.2);
   text-decoration: none;
 
   position: relative;
+
+  //START RESPONSIVE
+  @include responsive(s){
+
+    position: inherit;
+
+    &::before{
+      display:none;
+    }
+
+    &:hover{
+      &::before{
+        display: none;
+      }
+    }
+  }
+  //END RESPONSIVE
 
   //UNDERLINE
   &::before {

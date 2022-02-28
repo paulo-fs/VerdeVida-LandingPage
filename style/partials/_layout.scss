@@ -26,6 +26,10 @@
   .overline {
     color: $secondary-2;
   }
+
+  @include responsive(s){
+    display: none;
+  }
 }
 
 .container-laranja {
@@ -47,6 +51,11 @@
   .overline {
     color: $secondary-2;
   }
+
+  @include responsive(s){
+    display: none;
+  }
+  
 }
 
 .container {
@@ -57,6 +66,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
 }
 
 .container-100{
