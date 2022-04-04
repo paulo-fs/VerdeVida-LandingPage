@@ -46,4 +46,11 @@
       }
     }
   }
+
+  @include responsive(m){
+
+    .container-100{
+      padding: 2rem 0;
+    }
+  }
 }

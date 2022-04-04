@@ -31,4 +31,10 @@
       }
     }
   }
+
+  @include responsive(m){
+    .container{
+      padding: 6rem 4rem;
+    }
+  }
 }

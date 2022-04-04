@@ -11,9 +11,6 @@
       height: 580px;
       border-radius: 8px;
     }
-  }
-
-  .container-50{
 
     p{
       margin-bottom: 1rem;
@@ -35,6 +32,26 @@
       a{
         position: absolute;
         right: 0;
+      }
+    }
+  }
+
+  @include responsive(m){
+    padding: -6rem;
+
+    .container-50{
+      padding: 0rem;
+
+      .imagem{
+        width: 280px;
+        height: 430px;
+      }
+
+      .botao-descer{
+        a{
+          position: absolute;
+          left: 0;
+        }
       }
     }
   }

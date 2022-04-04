@@ -131,8 +131,8 @@ ul {
   height: 72px;
   padding: 1rem 4rem;
   background-color: #3a493d;
-  -webkit-box-shadow: 0px 3px 5px rgba(58, 73, 61, 0.4);
-          box-shadow: 0px 3px 5px rgba(58, 73, 61, 0.4);
+  -webkit-box-shadow: 0px 4px 10px rgba(42, 39, 40, 0.2);
+          box-shadow: 0px 4px 10px rgba(42, 39, 40, 0.2);
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +178,26 @@ ul {
   }
 }
 
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #menu-desktop {
+    padding: 1rem 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #menu-desktop .logo {
+    margin: 0 auto;
+  }
+  #menu-desktop .logo img {
+    height: 32px;
+  }
+}
+
 #menu-mobile {
+  display: none;
+}
+
+#menu-mobile .ocultar {
   display: none;
 }
 
@@ -186,13 +205,13 @@ ul {
   #menu-mobile {
     width: 100vw;
     height: 100vh;
-    padding: 6rem 4rem;
+    padding: 4rem 4rem;
     background-color: #3a493d;
     z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -201,7 +220,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
-  #menu-mobile::before {
+  #menu-mobile .close::before {
     content: '';
     position: fixed;
     top: 1.5rem;
@@ -212,6 +231,7 @@ ul {
     background-repeat: no-repeat;
     background-size: contain;
     padding: 0.5rem;
+    cursor: pointer;
   }
   #menu-mobile .logo img {
     height: 2.5rem;
@@ -625,6 +645,12 @@ ul {
   width: 100%;
 }
 
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #fornecedores .container {
+    padding: 6rem 4rem;
+  }
+}
+
 #oQueFazemos {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -667,6 +693,23 @@ ul {
   right: 0;
 }
 
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #oQueFazemos {
+    padding: -6rem;
+  }
+  #oQueFazemos .container-50 {
+    padding: 0rem;
+  }
+  #oQueFazemos .container-50 .imagem {
+    width: 280px;
+    height: 430px;
+  }
+  #oQueFazemos .container-50 .botao-descer a {
+    position: absolute;
+    left: 0;
+  }
+}
+
 #quemSomos .container {
   gap: 2rem;
 }
@@ -698,13 +741,12 @@ ul {
 
 #quemSomos .container-textos .botao-descer {
   margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
+  position: relative;
+}
+
+#quemSomos .container-textos .botao-descer a {
+  position: absolute;
+  left: 0;
 }
 
 #quemSomos .container-50 .imagem {
@@ -738,6 +780,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #pedirWhatsapp .container {
+    width: 100%;
+    padding: 6rem 4rem;
+  }
 }
 
 #comoChegar .container {
@@ -775,6 +824,26 @@ ul {
   height: 600px;
   border-radius: 4px;
   border: none;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #comoChegar .container {
+    padding: 6rem 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #comoChegar .container .container30 {
+    width: 100%;
+  }
+  #comoChegar .container .container70 .frame {
+    width: 700px;
+    height: 300px;
+  }
 }
 
 #depoimentos {
@@ -906,5 +975,11 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 840px) {
+  #footer .container-100 {
+    padding: 2rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
