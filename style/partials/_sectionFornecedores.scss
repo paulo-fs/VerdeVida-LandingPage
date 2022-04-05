@@ -37,4 +37,19 @@
       padding: 6rem 4rem;
     }
   }
+
+  @include responsive(s){
+    .fornecedores{
+      ul{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        li{
+          width: 20%;
+        }
+      }
+    }
+  }
 }

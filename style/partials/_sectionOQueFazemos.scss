@@ -37,10 +37,8 @@
   }
 
   @include responsive(m){
-    padding: -6rem;
 
     .container-50{
-      padding: 0rem;
 
       .imagem{
         width: 280px;
@@ -55,4 +53,49 @@
       }
     }
   }
-}
+
+  @include responsive(s){
+    .container{
+      .container-50{
+
+        .imagem{
+          width: 180px;
+          height: 250px;
+    
+          margin-bottom: 2rem;
+          }
+
+          .body-1{
+            margin-bottom: 2rem;
+          }
+
+          ul{
+            display: flex;
+            flex-direction: column;
+
+            li{
+              flex-direction: column;
+              align-items: baseline;
+              justify-items: baseline;
+
+              img{
+                display: none;
+              }
+            }
+          }
+
+          .botao-descer{
+            display: grid;
+            place-content: center;
+            margin: 3rem auto;
+            
+            .btn-round{
+              place-self: center;
+            }
+          }
+
+        }
+      }
+    }
+      
+  }

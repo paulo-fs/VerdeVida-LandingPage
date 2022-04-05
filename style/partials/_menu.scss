@@ -23,6 +23,10 @@ $box-shadow: 0px 4px 10px rgba($black-3, 0.2);
       height: 40px;
     }
   }
+
+  .menu-hamburguer{
+    display: none;
+  }
   
   .menu-items {
     display: flex;
@@ -35,7 +39,21 @@ $box-shadow: 0px 4px 10px rgba($black-3, 0.2);
   }
 
   @include responsive(s){
-    display: none;
+    width: 100vw;
+
+    .logo{
+      img{
+        width: 5rem;
+      };
+    }
+
+    .menu-hamburguer{
+      display: flex;
+    }
+
+    .menu-items{
+      display: none;
+    }
   }
 
   @include responsive(m){
@@ -52,66 +70,69 @@ $box-shadow: 0px 4px 10px rgba($black-3, 0.2);
   }
 }
 
-
-#menu-mobile {
- display:  none;
-
- .ocultar{
+#inactive{
   display: none;
+  @include responsive(s){
+    display: none;
+    nav.menu-mobile-items{
+      display: none;
+    }
+  }
 }
 
+.menu-mobile {
+//  display:  none;
+
   @include responsive(s){
-
-    //CLOSE BUTTON
-    .close{
-      &::before{
-        content: '';
-        position: fixed;
-        top: 1.5rem;
-        right: 1.5rem;
-  
-        width: 3rem;
-        height: 3rem;
-  
-        background-image: url(assets/icon/icon-x.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-  
-        padding: 0.5rem;
-        
-        cursor: pointer;
-      }
-    }
-
     width: 100vw;
     height: 100vh;
     padding: 4rem 4rem;
     background-color: $primary-3;
-    z-index: 2;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
   
     display: flex;
     gap: 3rem;
     flex-direction: column;
     align-items: center;
-  
-  
-    .logo {
-      img {
-        height: 2.5rem;;
-      }
-    }
     
-    .menu-items {
+    .menu-mobile-items {
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: 3rem;
+
+      .close{
+        &::before{
+          content: '';
+          position: fixed;
+          top: 1.5rem;
+          right: 1.5rem;
+    
+          width: 3rem;
+          height: 3rem;
+    
+          background-image: url(assets/icon/icon-x.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+    
+          padding: 0.5rem;
+          
+          cursor: pointer;
+        }
+      }
   
       .items {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        justify-content: center;
+        align-items: center;
 
+        text-align: center;
       }
     }
   }

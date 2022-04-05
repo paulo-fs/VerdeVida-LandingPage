@@ -53,4 +53,10 @@
       padding: 2rem 0;
     }
   }
+
+  @include responsive(s){
+    .container-100{
+      gap: 2rem;
+    }
+  }
 }

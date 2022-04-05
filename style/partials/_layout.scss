@@ -1,10 +1,13 @@
 //CONTAINERS
 
-
 .container-alter{
   width: 100vw;
   height: max-content;
   padding: 4rem 20rem;
+
+  @include responsive(s){
+    padding: 2rem 2rem;
+  }
 }
 
 .container-verde {
@@ -28,7 +31,8 @@
   }
 
   @include responsive(s){
-    display: none;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 
@@ -53,7 +57,8 @@
   }
 
   @include responsive(s){
-    display: none;
+    width: 100vw;
+    overflow-x: hidden;
   }
   
 }
@@ -67,6 +72,16 @@
   justify-content: space-between;
   align-items: center;
 
+  @include responsive(m){
+    padding: 6rem 3rem;
+  }
+
+  @include responsive(s){
+    width: 100%;
+
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
   
 }
 
@@ -76,20 +91,40 @@
 
 .container-70{
   max-width: 70%;
+
+  @include responsive(s){
+    width: 100%;
+  }
 }
 
 .container-60{
   max-width: 60%;
+
+  @include responsive(s){
+    width: 100%;
+  }
 }
 
 .container-50{
   max-width: 49%;
+
+  @include responsive(s){
+    width: 100%;
+  }
 }
 
 .container-40{
   max-width: 40%;
+
+  @include responsive(s){
+    width: 100%;
+  }
 }
 
 .container-30{
   max-width: 30%;
+
+  @include responsive(s){
+    width: 100%;
+  }
 }

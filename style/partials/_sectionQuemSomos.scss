@@ -44,6 +44,21 @@
     border-radius: 8px;
   }
 
-  
+  @include responsive(s){
+    
+    .container-50{
+      .imagem{
+        display: none;
+      }
+
+      ul{
+        li{
+          .check{
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
 }
